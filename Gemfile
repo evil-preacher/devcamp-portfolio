@@ -27,6 +27,7 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'pry-byebug'
 end
 
 group :development do
