@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/evil-preacher/preacher_view_tool
+  revision: 8d1f20942d5aaac3a2c381947fa60178cbe69702
+  specs:
+    preacher_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -197,6 +203,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   pg (~> 0.18)
+  preacher_view_tool!
   pry-byebug
   puma (~> 3.0)
   rails (~> 5.0.1)

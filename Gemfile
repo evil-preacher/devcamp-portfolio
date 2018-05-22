@@ -39,3 +39,5 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'preacher_view_tool', git: 'https://github.com/evil-preacher/preacher_view_tool'
