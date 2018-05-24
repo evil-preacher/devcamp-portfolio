@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-
     <meta name="keywords" content="<%= @seo_keywords %>"/>
-
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-
     <div class="container">
 
       <!-- Start of header-->
@@ -34,33 +31,12 @@
         </div>
       </header>
       <!-- End of header -->
-
-      <!-- Start of nav -->
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="#">World</a>
-          <a class="p-2 text-muted" href="#">U.S.</a>
-          <a class="p-2 text-muted" href="#">Technology</a>
-          <a class="p-2 text-muted" href="#">Design</a>
-          <a class="p-2 text-muted" href="#">Culture</a>
-          <a class="p-2 text-muted" href="#">Business</a>
-          <a class="p-2 text-muted" href="#">Politics</a>
-          <a class="p-2 text-muted" href="#">Opinion</a>
-          <a class="p-2 text-muted" href="#">Science</a>
-          <a class="p-2 text-muted" href="#">Health</a>
-          <a class="p-2 text-muted" href="#">Style</a>
-          <a class="p-2 text-muted" href="#">Travel</a>
-        </nav>
-      </div>
-      <!-- End of nav -->
+      <%= render 'shared/blog_nav' %>
     </div>
 
     <!-- Start of container and row elements -->
     <main role="main" class="container">
       <div class="row">
-
-
-        <%= login_helper %>
 
         <%= yield %>
 
@@ -99,10 +75,6 @@
           </div>
         </aside><!-- /.blog-sidebar -->
         <!-- End sidebar -->
-
-
-
-        <%= render "shared/nav", location: 'bottom' %>
 
         <%= source_helper("blog") %>
       </div>
