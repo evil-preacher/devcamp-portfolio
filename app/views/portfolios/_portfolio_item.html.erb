@@ -7,10 +7,12 @@
         <%= portfolio_item.subtitle %>
       </p>
       <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <%= link_to "Edit", edit_portfolio_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary' if logged_in?(:site_admin) %>
-          <%= link_to 'Destroy', portfolio_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary', method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
-        </div>
+        <% if logged_in?(:site_admin) %>
+          <div class="btn-group">
+            <%= link_to "Edit", edit_portfolio_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary' %>
+            <%= link_to 'Destroy', portfolio_path(portfolio_item), class: 'btn btn-sm btn-outline-secondary', method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
