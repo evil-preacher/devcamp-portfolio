@@ -16,13 +16,13 @@
     <%= render 'shared/portfolio_nav' %>
 
     <main role="main">
-      <%= render 'shared/portfolio_masthead' %>
+      <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 
       <%= yield %>
 
       <%= source_helper("application") %>
     </main>
-    
+
     <%= render 'shared/portfolio_footer' %>
   </body>
 </html>
