@@ -154,3 +154,17 @@ body {
 .app-footer {
   color: white;
 }
+
+.tech-news {
+  color: #696969;
+  text-shadow: none;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 15px;
+}
