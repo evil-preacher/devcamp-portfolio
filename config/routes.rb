@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     get :toggle_status, on: :member
   end
 
+  mount ActionCable.server => '/cable'
+
   root to: 'pages#home'
 end

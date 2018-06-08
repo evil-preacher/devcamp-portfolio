@@ -123,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -139,4 +140,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .social_links li {
   font-size: 2em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+  font-family: serif;
+  margin-top: 5px;
+}
+
+.comment-name {
+  font-weight: 700;
 }
