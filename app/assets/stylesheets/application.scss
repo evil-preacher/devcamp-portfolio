@@ -41,7 +41,7 @@ body {
 }
 
 .cover-container {
-  max-width: 55em;
+  max-width: 65em;
 }
 
 
@@ -172,8 +172,19 @@ body {
 .app-card-container {
   color: #696969;
   text-shadow: none;
+  text-align: left;
 }
 
 .app-card-container > .card {
   padding: 30px;
+}
+
+.card > img {
+  position: static;
+  margin-right: 10px;
+}
+
+.card-block {
+  margin: 5px 0;
+  padding: 5px 10px;
 }
