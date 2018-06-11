@@ -18,8 +18,18 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+html,
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .display-4 {
@@ -167,4 +177,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+.nav .p-2 {
+  padding: 0 !important;
 }
