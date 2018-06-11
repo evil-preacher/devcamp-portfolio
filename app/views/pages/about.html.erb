@@ -4,6 +4,24 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "Profile image" %>
+
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h5><%= skill.title %></h5>
+              <div class="progress" style="height: 5px;">
+                <div
+                  class="progress-bar progress-bar-striped bg-danger"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                  >
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8">
         <p>I'm Ruby on Rails developer</p>
