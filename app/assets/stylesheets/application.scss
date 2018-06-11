@@ -30,8 +30,17 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
 body {
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +50,7 @@ body {
 }
 
 .cover-container {
-  max-width: 55em;
+  max-width: 65em;
 }
 
 
@@ -167,4 +176,23 @@ body {
 
 .tech-news > .card {
   padding: 15px;
+}
+
+.app-card-container {
+  color: #696969;
+  text-shadow: none;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.card-block {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+.skill {
+  margin: 5px 0;
 }
