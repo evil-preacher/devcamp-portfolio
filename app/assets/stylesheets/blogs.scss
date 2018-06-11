@@ -156,3 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 .comment-name {
   font-weight: 700;
 }
+
+.blogcrumb {
+  font-size: 1.25em;
+}
+
+.blogcrumb > a {
+  margin: 10px;
+}
